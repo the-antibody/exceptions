@@ -8,8 +8,11 @@
 
 // exception type enum
 enum EXCEPTION_TYPE {
-    FILE_NOT_FOUND,
-    KEY_NOT_FOUND
+    YOU,
+    MAKE,
+    YOUR,
+    OWN,
+    EXCEPTIONS
 };
 
 // public accessible
@@ -30,11 +33,20 @@ class exception
             // the type
             switch (type)
             {
-                case FILE_NOT_FOUND:
-                    return "FILE_NOT_FOUND_EXCEPTION";
+                case YOU:
+                    return "YOU";
                     break;
-                case KEY_NOT_FOUND:
-                    return "KEY_NOT_FOUND_EXCEPTION";
+                case MAKE:
+                    return "MAKE";
+                    break;
+                case YOUR:
+                    return "YOUR";
+                    break;
+                case OWN:
+                    return "OWN";
+                    break;
+                case EXCEPTIONS:
+                    return "EXCEPTIONS";
                     break;
             }
 
