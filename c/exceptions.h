@@ -1,3 +1,8 @@
+#ifndef EXCEPTIONS_H
+#define EXCEPTIONS_H
+
+#pragma once
+
 #include <stdio.h>
 #include <string.h>
 
@@ -56,3 +61,5 @@ void _throw(exception *exception)
     // throw
     printf("Error: %s\n%s\n", type, exception->message);
 }
+
+#endif
