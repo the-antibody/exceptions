@@ -8,11 +8,11 @@
 
 // exceptions
 enum exception_type {
-    YOU = 0,
-    MAKE = 1,
-    YOUR = 2,
-    OWN = 3,
-    EXCEPTIONS = 4
+    YOU,
+    MAKE,
+    YOUR,
+    OWN,
+    EXCEPTIONS
 };
 
 // public accessible
@@ -39,11 +39,11 @@ void to_string(char *var, exception_type type)
     switch (type)
     {
         // get messages
-        case 0: strcpy(var, "YOU"); break;
-        case 1: strcpy(var, "MAKE"); break;
-        case 2: strcpy(var, "YOUR"); break;
-        case 3: strcpy(var, "OWN"); break;
-        case 4: strcpy(var, "EXCEPTIONS"); break;
+        case YOU: strcpy(var, "YOU"); break;
+        case MAKE: strcpy(var, "MAKE"); break;
+        case YOUR: strcpy(var, "YOUR"); break;
+        case OWN: strcpy(var, "OWN"); break;
+        case EXCEPTIONS: strcpy(var, "EXCEPTIONS"); break;
     }
 }
 
